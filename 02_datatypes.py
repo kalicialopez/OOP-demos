@@ -8,5 +8,5 @@ print(type(()))
 print(type({}))
 print(type(True))
 print(type(None))
-
-
+print(type(object))
+print(type(type))
