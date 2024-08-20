@@ -22,17 +22,17 @@ class Pet:
         print(self.noise)
 
 
+# Inherited Dogs
 class Dog(Pet):
     noise = "Woof!"
 
 
-# Inherited Dogs
 # Instantiating the dog class, to create unique instances i.e. my_dog and my_other_dog
-Dog1 = Dog("Ruby", "", 2, "Brown")
-Dog2 = Dog("Happy", "Golden Retriever", 3, "White")
+dog1 = Dog("Ruby", "", 2, "Brown")
+dog2 = Dog("Happy", "Golden Retriever", 3, "White")
 
-print(Dog2.speak())
-Dog1.eat()
+print(dog2.speak())
+dog1.eat()
 
 
 # Polymophic Power Cats
@@ -40,9 +40,9 @@ class Cat(Pet):
     noise = "Meow!"
 
 
-# Instantiating the cat class, to create unique instances i.e. Cat1 and Cat2
-Cat1 = Cat("Whiskers", "British Shorthair", 4, "Blue")
-Cat2 = Cat("Sylvester", "Tabby", 5, "Orange")
+# Instantiating the cat class, to create unique instances i.e. cat1 and cat2
+cat1 = Cat("Whiskers", "British Shorthair", 4, "Blue")
+cat2 = Cat("Sylvester", "Tabby", 5, "Orange")
 
-Cat1.sleep()
-Cat2.speak()
+cat1.sleep()
+cat2.speak()
