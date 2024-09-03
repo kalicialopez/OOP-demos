@@ -11,7 +11,6 @@ class Pet:
         self.weight = weight
 
     def eat(self):
-        self.weight += 0.1
         print(f"{self.name} is eating.")
 
     def sleep(self):
@@ -30,14 +29,13 @@ class Dog(Pet):
 
 
 # Instantiating the dog class, to create unique instances i.e. my_dog and my_other_dog
-dog1 = Dog("Ruby", "Staffy", 2, "Brown", weight=15)
+dog1 = Dog("Ruby", "Staffy", 2, "Brown", weight=16)
 dog2 = Dog("Happy", "Golden Retriever", 3, "White", weight=30)
 
-print(dog2.speak())
-dog1.eat()
+# dog2.speak()
+# dog2.eat()
 
-
-# Polymophic Power Cats
+# Polymorphic Power Cats
 class Cat(Pet):
     noise = "Meow!"
 
@@ -48,3 +46,4 @@ cat2 = Cat("Sylvester", "Tabby", 5, "Orange", weight=4)
 
 cat1.sleep()
 cat2.speak()
+cat1.eat()
